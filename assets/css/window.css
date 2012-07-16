@@ -1,0 +1,179 @@
+.main_container {
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	-moz-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.9);
+	-webkit-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.9);
+	box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.9);
+	background-color:rgba(160,160,160,0.4);
+	border:1px solid #000;
+	height:146px;
+	padding-bottom:35px;
+	padding-top:0px;
+	position:absolute;
+	width:99.7%;
+	height: 95.5%;
+	z-index:1;
+	margin: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.main_container_title{
+	background:transparent url(images/filemanager.ico) no-repeat 6px 0px;
+	color:#000;
+	user-select: none;
+	font:normal 12px/16px "Segoe UI",Arial,sans-serif;
+	height:16px;
+	overflow:hidden;
+	padding:0px 0 0px 28px;
+	text-overflow:ellipsis;
+	text-shadow:0 0 1px #fff, 3px 3px 5px #fff, -3px -3px 5px #fff, -3px 3px 5px #fff, 3px -3px 5px #fff;
+	white-space:nowrap;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+.main_container_content {
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.65);
+	-webkit-box-shadow:0 0 0 1px rgba(255,255,255,0.65);
+	box-shadow:0 0 0px 1px rgba(255,255,255,0.65);
+	background-color:#fff;
+	border:1px solid #666;
+	color:#000;
+	font:normal 12px/18px "Segoe UI",arial,sans-serif;
+	height:98%;
+	margin:0 6px;
+	overflow:auto;
+	position:relative;
+	width: 99.2%;
+}
+
+
+#dialog-overlay {
+ 
+    /* set it to fill the whil screen */
+    width:100%;
+    height:100%;
+     
+    /* transparency for different browsers */
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    background:#000;
+ 
+    /* make sure it appear behind the dialog box but above everything else */
+    position:absolute;
+    top:0; left:0;
+    z-index:3000;
+ 
+    /* hide it by default */
+    display:none;
+}
+ 
+ 
+#dialog-box {
+    /* css3 drop shadow */
+   -moz-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.9);
+	-webkit-box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.9);
+	box-shadow:0 0 0 1px #eee inset, 0 0 15px rgba(0,0,0,0.9);
+     
+    /* css3 border radius */
+    -moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px; 
+     
+	background-color:rgba(160,160,160,1);
+    /* styling of the dialog box, i have a fixed dimension for this demo */
+    width:328px;
+     
+    /* make sure it has the highest z-index */
+    position:absolute;
+    z-index:5000;
+ 
+    /* hide it by default */
+    display:none;
+}
+ 
+#dialog-box .dialog-content {
+    /* style the content */
+    text-align:center;
+    padding:10px;
+    color:#666;
+    font-family:arial;
+    font-size:11px;
+	 -moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	-moz-box-shadow:0 0 0 1px rgba(255,255,255,0.65);
+	-webkit-box-shadow:0 0 0 1px rgba(255,255,255,0.65);
+	box-shadow:0 0 0px 1px rgba(255,255,255,0.65);
+	background-color:#F0F0F0;
+	border:1px solid #666;
+	color:#000;
+	font:normal 12px/18px "Segoe UI",arial,sans-serif;
+	height:95%;
+	margin: 10px;
+	overflow:auto;
+	position:relative;
+}
+
+#dialog-title
+{
+	background:transparent url(images/filemanager.ico) no-repeat 6px 0px;
+	color:#000;
+	user-select: none;
+	font:normal 12px/16px "Segoe UI",Arial,sans-serif;
+	height:16px;
+	overflow:hidden;
+	padding:0px 0 0px 28px;
+	text-overflow:ellipsis;
+	text-shadow:0 0 1px #fff, 3px 3px 5px #fff, -3px -3px 5px #fff, -3px 3px 5px #fff, 3px -3px 5px #fff;
+	white-space:nowrap;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+ 
+a.button1 {
+    text-align:center; width:50px; padding: 5px 10px 6px; color: #fff; text-decoration: none; font-weight: bold;
+    line-height: 1; background-color: #555555; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); cursor: pointer;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5); text-shadow: 0 -1px 1px rgba(0,0,0,0.25); border-bottom: 1px solid rgba(0,0,0,0.25); position: relative;
+}
+ 
+a.button1:hover {
+    background-color: #c33100; 
+}
+.close_button{ float: right; color: #fff; margin-right: 10px; -moz-border-radius:7px; -webkit-border-radius:7px; border-radius:7px;  }
+.button_container { margin-top: 15px; margin-bottom: 5px; padding: 0; text-align: center; margin-left:10px;}
+
+/* Resizeable
+.ui-resizable-handle{display:block;position:absolute;}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle{display:none;}
+.ui-resizable-n,.ui-resizable-s{height:7px;left:0;width:100%;}
+.ui-resizable-n{cursor:n-resize;top:-5px;}
+.ui-resizable-s{bottom:-5px;cursor:s-resize;}
+.ui-resizable-e,.ui-resizable-w{height:100%;top:0;width:7px;}
+.ui-resizable-e{cursor:e-resize;right:-5px;}
+.ui-resizable-w{cursor:w-resize;left:-5px;}
+.ui-resizable-se,.ui-resizable-sw,
+.ui-resizable-nw,.ui-resizable-ne{height:12px;width:12px;}
+.ui-resizable-se{bottom:0;cursor:se-resize;right:0;}
+.ui-resizable-sw{bottom:0;cursor:sw-resize;left:0;}
+.ui-resizable-nw{cursor:nw-resize;left:0;top:0;}
+.ui-resizable-ne {cursor:ne-resize;right:0;top:0;} */
